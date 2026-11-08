@@ -1,0 +1,13 @@
+models:
+    - name: bronze_bookings
+      description: "This is the bookings table"
+      config:
+        materialized: table
+    - name: bronze_listings
+      description: "This is the listings table"
+      config:
+        materialized: table
+    - name: bronze_hosts
+      description: "This is the hosts table"
+      config:
+        materialized: table

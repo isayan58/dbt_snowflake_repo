@@ -16,5 +16,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   SnowFlake_DBT_Practice:
-      example:
-      +materialized: table
+      bronze:
+          +schema: "bronze"
+          +materialized: table
+      silver:
+          +schema: "silver"
+          +materialized: table
+      gold:
+          +schema: "gold"
+          +materialized: table
