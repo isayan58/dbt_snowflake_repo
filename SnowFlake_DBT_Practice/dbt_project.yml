@@ -25,5 +25,6 @@ models:
       gold:
           +schema: "gold"
           +materialized: table
+          +post-hook: "{{ apply_certification() }}"
           ephemeral:
             +materialized: ephemeral

@@ -1,0 +1,12 @@
+SnowFlake_DBT_Practice:
+  target: prod
+  outputs:
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: TRANSFORMER_PROD
+      database: AIRBNB_PROD
+      warehouse: WH_PROD
+      schema: dbt_schema
+      threads: 4
