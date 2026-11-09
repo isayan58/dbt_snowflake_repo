@@ -1,0 +1,9 @@
+snapshots:
+    - name: dim_listings
+      relation: ref('listings')
+      config:
+        schema: gold
+        unique_key: listing_id
+        strategy: timestamp
+        updated_at: LISTING_CREATED_AT
+        dbt_valid_to_current: null

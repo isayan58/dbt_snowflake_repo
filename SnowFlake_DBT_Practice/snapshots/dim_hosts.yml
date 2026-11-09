@@ -1,0 +1,9 @@
+snapshots:
+    - name: dim_hosts
+      relation: ref('hosts')
+      config:
+        schema: gold
+        unique_key: host_id
+        strategy: timestamp
+        updated_at: HOST_CREATED_AT
+        dbt_valid_to_current: null
