@@ -1,6 +1,6 @@
 sources:
     - name: staging
-      database: AIRBNB
+      database: "{{ target.database }}"
       schema: STAGING
       tables:
        - name: listings

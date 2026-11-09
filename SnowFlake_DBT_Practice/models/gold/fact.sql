@@ -1,6 +1,6 @@
 {% set configs = [
     {
-        "table": "AIRBNB.gold.obt",
+        "table": ref('obt'),
         "columns": "gold_obt.booking_id, gold_obt.listing_id, gold_obt.host_id, gold_obt.total_amount, gold_obt.price_per_night",
         "alias": "gold_obt"
     }
